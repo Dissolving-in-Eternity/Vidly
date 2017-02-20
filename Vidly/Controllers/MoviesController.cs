@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
-using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
@@ -51,6 +51,16 @@ namespace Vidly.Controllers
             };
 
             return View(viewModel);
-        }      
+        }
+
+        public ActionResult New()
+        {
+            var viewModel = new MovieFormViewModel()
+            {
+                Genres = _context.Genres
+            };
+
+            return View("MovieForm", viewModel);
+        }
     }
 }
