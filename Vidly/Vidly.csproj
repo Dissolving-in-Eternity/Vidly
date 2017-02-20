@@ -251,6 +251,10 @@
     <Compile Include="Migrations\201702171759116_UpdateMovieAnnotations.Designer.cs">
       <DependentUpon>201702171759116_UpdateMovieAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702202214248_ChangeMovieAnnotations.cs" />
+    <Compile Include="Migrations\201702202214248_ChangeMovieAnnotations.Designer.cs">
+      <DependentUpon>201702202214248_ChangeMovieAnnotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
@@ -380,6 +384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702171759116_UpdateMovieAnnotations.resx">
       <DependentUpon>201702171759116_UpdateMovieAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702202214248_ChangeMovieAnnotations.resx">
+      <DependentUpon>201702202214248_ChangeMovieAnnotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
