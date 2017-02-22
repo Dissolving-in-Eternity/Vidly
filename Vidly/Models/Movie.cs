@@ -18,11 +18,13 @@ namespace Vidly.Models
         public byte GenreId { get; set; }
 
         [Display(Name = "Release Date")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime ReleaseDate { get; set; }
 
         public DateTime DateAdded { get; set; }
 
         [Display(Name = "Number in Stock")]
+        [Range(1, 20)]
         public byte NumberInStock { get; set; }
     }
 }
