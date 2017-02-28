@@ -279,6 +279,10 @@
     <Compile Include="Migrations\201702202214248_ChangeMovieAnnotations.Designer.cs">
       <DependentUpon>201702202214248_ChangeMovieAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702281720468_SeedUsers.cs" />
+    <Compile Include="Migrations\201702281720468_SeedUsers.Designer.cs">
+      <DependentUpon>201702281720468_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
@@ -587,6 +591,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702202214248_ChangeMovieAnnotations.resx">
       <DependentUpon>201702202214248_ChangeMovieAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281720468_SeedUsers.resx">
+      <DependentUpon>201702281720468_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
