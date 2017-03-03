@@ -236,6 +236,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CustomersController.cs" />
     <Compile Include="Controllers\API\MoviesController.cs" />
+    <Compile Include="Controllers\API\NewRentalDto.cs" />
+    <Compile Include="Controllers\API\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -312,10 +314,15 @@
     <Compile Include="Migrations\201703020004128_AddPhoneToApplicationUser.Designer.cs">
       <DependentUpon>201703020004128_AddPhoneToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703032145211_AddRental.cs" />
+    <Compile Include="Migrations\201703032145211_AddRental.Designer.cs">
+      <DependentUpon>201703032145211_AddRental.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="ViewModels\Identity\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -634,6 +641,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703020004128_AddPhoneToApplicationUser.resx">
       <DependentUpon>201703020004128_AddPhoneToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703032145211_AddRental.resx">
+      <DependentUpon>201703032145211_AddRental.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
