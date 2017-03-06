@@ -81,6 +81,22 @@
 
                 viewModel.movieIds.push(movie.id);
             });
+
+            $("#newRental").submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: "/api/newRentals",
+                    method: "post",
+                    data: viewModel
+                })
+                .done(function() {
+                    console.log("Done");    
+                })
+                .fail(function() {
+                        
+                });
+            });
         });
     </script>
 }
