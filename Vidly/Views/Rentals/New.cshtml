@@ -91,10 +91,10 @@
                     data: viewModel
                 })
                 .done(function() {
-                    console.log("Done");    
+                    toastr.success("Rentals successfully recorded.");    
                 })
                 .fail(function() {
-                        
+                     toastr.error("Something unexpected happened.");   
                 });
             });
         });
