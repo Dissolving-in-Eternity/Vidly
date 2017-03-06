@@ -236,7 +236,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CustomersController.cs" />
     <Compile Include="Controllers\API\MoviesController.cs" />
-    <Compile Include="Controllers\API\NewRentalDto.cs" />
     <Compile Include="Controllers\API\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -246,6 +245,7 @@
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -317,6 +317,10 @@
     <Compile Include="Migrations\201703032145211_AddRental.cs" />
     <Compile Include="Migrations\201703032145211_AddRental.Designer.cs">
       <DependentUpon>201703032145211_AddRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703061310532_AddNumberAvailable.cs" />
+    <Compile Include="Migrations\201703061310532_AddNumberAvailable.Designer.cs">
+      <DependentUpon>201703061310532_AddNumberAvailable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -644,6 +648,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703032145211_AddRental.resx">
       <DependentUpon>201703032145211_AddRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703061310532_AddNumberAvailable.resx">
+      <DependentUpon>201703061310532_AddNumberAvailable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

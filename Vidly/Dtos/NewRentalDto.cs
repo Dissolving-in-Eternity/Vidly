@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Vidly.Controllers.API
+namespace Vidly.Dtos
 {
     public class NewRentalDto
     {
