@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
@@ -35,24 +34,6 @@ namespace Vidly.Controllers
             var movie = _context.Movies.Include(m => m.Genre).FirstOrDefault(m => m.Id == id);
 
             return View(movie);
-        }
-
-        public ActionResult Random()
-        {
-            var movie = new Movie() { Name = "Shrek" };
-            var customers = new List<Customer>
-            {
-                new Customer {Name = "Customer 1"},
-                new Customer {Name = "Customer 2"}
-            };
-
-            var viewModel = new RandomMovieViewModel
-            {
-                Movie = movie,
-                Customers = customers
-            };
-
-            return View(viewModel);
         }
 
         [Authorize(Roles = RoleName.CanManageMovies)]
@@ -105,12 +86,12 @@ namespace Vidly.Controllers
             }
             else
             {
-                var movieInDB = _context.Movies.Single(m => m.Id == movie.Id);
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
 
-                movieInDB.Name = movie.Name;
-                movieInDB.GenreId = movie.GenreId;
-                movieInDB.NumberInStock = movie.NumberInStock;
-                movieInDB.ReleaseDate = movie.ReleaseDate;
+                movieInDb.Name = movie.Name;
+                movieInDb.GenreId = movie.GenreId;
+                movieInDb.NumberInStock = movie.NumberInStock;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
             }
 
             _context.SaveChanges();

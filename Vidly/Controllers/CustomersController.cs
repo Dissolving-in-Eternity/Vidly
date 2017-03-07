@@ -51,15 +51,15 @@ namespace Vidly.Controllers
                 _context.Customers.Add(customer);
             else
             {
-                var customerInDB = _context.Customers.Single(c => c.Id == customer.Id);
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
 
                 // Not a secure way to do this 
-                //TryUpdateModel(customerInDB);
+                //TryUpdateModel(customerInDb);
 
-                customerInDB.Name = customer.Name;
-                customerInDB.Birthdate = customer.Birthdate;
-                customerInDB.MembershipTypeId = customer.MembershipTypeId;
-                customerInDB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+                customerInDb.Name = customer.Name;
+                customerInDb.Birthdate = customer.Birthdate;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
             }
             _context.SaveChanges();
             
