@@ -64,7 +64,7 @@
                 for details on setting up this ASP.NET application to support two-factor authentication.
             </p>
         *@
-            @*@if (Model.TwoFactor)
+    @*@if (Model.TwoFactor)
                 {
                     using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
@@ -83,7 +83,8 @@
                         <input type="submit" value="Enable" class="btn btn-link" />
                         </text>
                     }
-                }*@
+                }
         </dd>
+        *@
     </dl>
 </div>
